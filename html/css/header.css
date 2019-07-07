@@ -2,9 +2,10 @@ div,ul,li{
     padding: 0;
     margin: 0;
 }
-body{
-    color:#333;
-}
+body, button, input, select, textarea {
+    font: 12px, Arial, Helvetica, sans-serif;
+    color: #333
+} 
 a{
     text-decoration: none;
     font: 14px "微软雅黑";

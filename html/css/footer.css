@@ -5,10 +5,10 @@ h3{
     padding: 0;
 }
 
-body {
-    color: #333;
-    font-family: "微软雅黑";
-}
+body, button, input, select, textarea {
+    font: 12px, Arial, Helvetica, sans-serif;
+    color: #333
+} 
 
 ul {
     list-style: none;

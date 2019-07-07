@@ -1,0 +1,91 @@
+ul,div,li{
+    padding: 0;
+    margin: 0;
+}
+
+.top_box{
+    width: 1080px;
+}
+.clear_both::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.top_box{
+    width: 1080px;
+    margin: 0 auto;
+}
+body, button, input, select, textarea {
+    font: 12px, Arial, Helvetica, sans-serif;
+    color: #333
+} 
+/* 搜索框 */
+.top_search{
+    padding: 10px;
+    background: #eee;
+}
+.booking_box{
+    border: 1px solid #ccc;
+}
+.booking_box .booking_item{
+    float: left;
+    width:374px;
+    height: 50px;
+    background: #fff;
+    line-height: 50px;
+    border-radius: 3px;
+}
+.booking_item+.booking_item{
+    margin-left:3px; 
+}
+.booking_item:first-child{
+    width: 150px;
+}
+.booking_item:first-child input{
+    width: 90px;
+}
+.booking_item input{
+    outline: none;
+    border:0;
+    width: 319px;
+}
+/* 地图小图标、预订时间 */
+.place_icon_box,.time_icon,.word{
+    width: 55px;
+    height: 60px;
+    float: left;
+    text-align: center;
+    line-height: 55px;
+    font-size:30px; 
+    color: #333;
+}
+.icon-icon-pen{
+    font-size: 28px;
+    font-weight: 400px;
+}
+.icon-ditu{
+    font-size: 28px;
+    color: #333;
+}
+/* 搜索 */
+.booking_item:last-child{
+    width: 150px;
+    text-align: center;
+    background: #2fb3ff;
+    float: right;
+}
+.btn_search{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+}
+.btn_search:hover{
+    background: #2cc5ff;
+}

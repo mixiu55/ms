@@ -88,6 +88,13 @@ a{
     width: 55px;
     height: 60px;
     float: left;
+    text-align: center;
+    line-height: 55px;
+    font-size:30px; 
+}
+.icon-ditu{
+    font-size: 28px;
+    color: #333;
 }
 /* 搜索 */
 .booking_item:last-child{
@@ -208,5 +215,10 @@ section{
     border:1px solid #ccc;
     border-radius: 10px;
     box-shadow: 2px 2px 5px #bbb;
+}
+.security_item a{
+    color:#333;
+}
+.security_item a:hover{
     color: #2fb3ff;
 }
