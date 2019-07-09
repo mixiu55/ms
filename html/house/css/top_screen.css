@@ -6,6 +6,12 @@ ul,div,li{
 .top_box{
     width: 1080px;
 }
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
 .clear_both::after{
     content: "";
     display: block;
@@ -16,15 +22,17 @@ ul{
 }
 a{
     text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
 }
+body, button, input, select, textarea {
+    font: 12px Arial, Helvetica, sans-serif;
+    color: #333;
+} 
 .top_box{
     width: 1080px;
     margin: 0 auto;
 }
-body, button, input, select, textarea {
-    font: 12px, Arial, Helvetica, sans-serif;
-    color: #333
-} 
 /* 搜索框 */
 .top_search{
     padding: 10px;
@@ -58,10 +66,10 @@ body, button, input, select, textarea {
 /* 地图小图标、预订时间 */
 .place_icon_box,.time_icon,.word{
     width: 55px;
-    height: 60px;
+    height: 50px;
     float: left;
     text-align: center;
-    line-height: 55px;
+    line-height: 50px;
     font-size:30px; 
     color: #333;
 }
@@ -85,7 +93,128 @@ body, button, input, select, textarea {
     width: 100%;
     height: 100%;
     color: #fff;
+    font-size: 16px;
 }
 .btn_search:hover{
     background: #2cc5ff;
+}
+/* 筛选框 */
+.top_screen{
+    border: 1px solid #ccc;
+    padding: 0px 15px;
+}
+.top_screen>div{
+    height: 40px;
+    line-height: 40px;
+}
+.screen_h_type,.screen_price,.screen_have,.screen_feature{
+    border-top:1px solid #ccc;
+}
+.screen_title{
+    display: inline-block;
+    width: 70px;
+    text-align: center;
+    font-weight: bold;
+}
+.screen_unlimit{
+    display: inline-block;
+    width: 110px;
+}
+.screen_unlimit>a{
+    display: inline-block;
+    width: 50px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background: #2fb3ff;
+    color: #fff;
+    border-radius: 5px;
+}
+.screen_unlimit>a:hover{
+    background:#2cc5ff;
+}
+.screen_position,.screen_h_type,.screen_price,.screen_have,.screen_feature{
+    position: relative;
+}
+.position_ul,.h_type_ul,.price_ul,.have_ul,.feature_ul{
+    position: absolute;
+    top:3px;
+    left: 185px;
+}
+.pst_item,.h_type_item,.price_item,.have_item,.feature_item{
+    width: 110px;
+    height: 40px;
+    line-height: 35px;
+    position: relative;
+}
+.pst_item>a{
+    border:1px solid transparent;
+    display: inline-block;
+    height: 35px;
+    position: relative;
+}
+/* 位置 */
+/* 小三角 */
+.small_arrow{
+    display: inline-block;
+    margin-left: 5px;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 5px solid #666;
+}
+.pst_item:hover .pst_a{
+    border:1px solid #ccc;
+    border-bottom: 0px;
+    z-index: 2;
+    background: #fff;
+}
+.pst_item:hover .small_arrow{
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-bottom: 5px solid #666;
+    border-top: 0px;
+}
+/* 热门推荐 */
+.rmtj_box{
+    width: 650px;
+    position: absolute;
+    border:1px solid #ccc;
+    box-shadow: 1px 1px 5px #eee; 
+    top:35px;
+    left:0px;
+    padding-left: 30px;
+    background: #fff;
+    display: none;
+    z-index: 1;
+}
+.rmtj_li:hover .rmtj_box{
+    display: block;
+}
+.pst_ul_item{
+    float: left;
+    width: 110px;
+}
+.pst_ul_item>a{
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    padding:0px 3px;
+    border-radius: 2px;
+}
+.pst_ul_item>a:hover{
+    background: #2fb3ff;
+    color:#fff;
+}
+/* 其余部分a标签背景 */
+.checkbox-flag{
+    display: inline-block;
+    padding-left: 20px;
+    background:url(../../imgs/house/xuanzekuang.png) no-repeat 0px 10px; 
+    height: 32px;
+}
+.checkbox-flag:hover{
+    background-position:0px -14px;
+}
+.checkbox-flag:focus{
+    background-position:-1px -38px;
 }
