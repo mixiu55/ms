@@ -3,7 +3,7 @@ div,h4,ul,p{
   padding: 0;
 } 
 body, button, input, select, textarea {
-  font: 12px Arial, Helvetica, sans-serif;
+  font: 14px Arial, Helvetica, sans-serif;
   color: #333;
 } 
 .fl{
@@ -19,6 +19,10 @@ body, button, input, select, textarea {
 }
 a{
   text-decoration: none;
+  color: #333;
+}
+a:hover{
+  color:#2fb3ff;
 }
 ul{
   list-style: none;
@@ -114,7 +118,7 @@ section{
   height: 230px;
   position: relative;
 }
-.room-img>a{
+.r_img_a{
   display: inline-block;
   width: 345px;
   height: 230px;
@@ -147,8 +151,19 @@ section{
   background: rgba(0,0,0,.5);
   font-size: 25px;
   padding: 10px;
-  border-radius: 10px;
+  border-radius: 0px 10px;
   color: #eeebeb;
+}
+.r_fd_a{
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -15px;
+  right: 15px;
 }
 .room_detail{
   width: 80%;
@@ -159,9 +174,53 @@ section{
   color: #484848;
   font-weight: bold;
   margin-top: 20px;
+  margin-bottom: 10px;
 }
 .room_detail>a{
   font-size: 16px;
   color: #3a3a3a;
   font-weight: bold;
+}
+.iconfont.icon-ditu{
+  font-size: 14px;
+}
+.iconfont.icon-ditu:hover{
+  color: #2fb3ff;
+}
+/* 地图 */
+.r_ads_a{
+  position: relative;
+}
+.r_ads_img{
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  padding: 2px;
+  border: 1px solid #ddd;
+  top: -125px;
+  left: 20px;
+  background: #fff;
+  display: none;
+}
+/* 边框的小三角 */
+.r_ads_img .rank_bg{
+  position: absolute;
+  font-size: 16px;
+  top: 120px;
+  left: -5px;
+  color: #fff;
+}
+.r_ads_img .rank_br{
+  position: absolute;
+  font-size: 16px;
+  top: 120px;
+  left: -6px;
+  color: #ddd;
+}
+.r_ads_a:hover .r_ads_img{
+  display: block;
+}
+.r_ads_img>img{
+  width: 100%;
+  height: 100%;
 }
