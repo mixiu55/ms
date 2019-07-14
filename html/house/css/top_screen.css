@@ -218,3 +218,47 @@ body, button, input, select, textarea {
 .checkbox-flag:focus{
     background-position:-1px -38px;
 }
+/*flex布局让子元素水平垂直居中*/
+label { 
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+label:last-child{
+    margin-right: 5px;
+}
+input[type=checkbox]{
+    /* 取消input默认样式 */
+    -webkit-appearance: none;
+    appearance: none;
+    outline: none;
+
+    width: 12px;
+    height: 12px;
+    cursor: pointer;
+    background: #fff;
+    border: 1px solid #ccc;
+    position: relative;
+    margin-right: 10px;
+}
+input[type=checkbox]:hover{
+    border: 1px solid #2fb3ff;
+}
+input[type=checkbox]:checked::after {
+    /* css中的√样式 */
+    content: "\2714";
+    display: block;
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    right: 0;
+    bottom: 0;
+    width: 10px;
+    height: 10px;
+    line-height: 10px;
+    background: #2fb3ff;
+    border: 1px solid #ddd;
+    color: #fff;
+    font-size: 12px;
+}
+

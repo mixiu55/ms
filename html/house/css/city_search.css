@@ -1,0 +1,167 @@
+div,h4,ul,p{
+  margin: 0;
+  padding: 0;
+} 
+body, button, input, select, textarea {
+  font: 12px Arial, Helvetica, sans-serif;
+  color: #333;
+} 
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+.clear_both::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+a{
+  text-decoration: none;
+}
+ul{
+  list-style: none;
+}
+i{
+  font-style: normal;
+}
+section{
+  width: 1080px;
+  margin: 0 auto;
+}
+/* 索引栏 */
+.search_nav{
+  font-size: 14px;
+}
+.search_nav>a{
+  color: #555
+}
+.search_nav>a::after{
+  content: ">";
+  padding-left:5px;
+  font-size: 14px; 
+}
+.search_nav>h4{
+  display: inline-block;
+  font-weight: normal;
+  color: #555;
+}
+/* 排序 */
+.house_rank{
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+.rank_item{
+  width:85px;
+}
+.rank_item:last-child{
+  width: 98px;
+}
+.rank_item+.rank_item{
+  text-align: center;
+}
+.rank_a{
+  color: #333;
+}
+.rank_item:hover .rank_a,.p_rank_a:hover{
+  color: #2fb3ff;
+}
+.r_price{
+  position: relative;
+}
+.price_rank_box{
+  width:72px;
+  border: 1px solid #eee;
+  border-radius: 3px;
+  box-shadow: 1px 1px 1px #bbb;
+  padding: 5px;
+  display: none;
+  position: absolute;
+}
+.p_rank_item{
+  height: 30px;
+  line-height: 30px;
+}
+/* 边框的小三角 */
+.p_rank_back .rank_bg{
+  position: absolute;
+  font-size: 16px;
+  top: -10px;
+  left: 37px;
+  color: #fff;
+}
+.p_rank_back .rank_br{
+  position: absolute;
+  font-size: 16px;
+  top:-12px;
+  left: 37px;
+  color: #eee;
+}
+.p_rank_a{
+  color: #555;
+  font-size: 12px;
+}
+.rank_item:nth-child(2):hover .price_rank_box{
+  display: block;
+}
+/* 图片部分 */
+.s_room_item{
+  width: 345px;
+}
+.room-img{
+  width: 345px;
+  height: 230px;
+  position: relative;
+}
+.room-img>a{
+  display: inline-block;
+  width: 345px;
+  height: 230px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.room-img img{
+  width: 100%;
+  height: 100%;
+}
+/* 收藏小星星 */
+.room_like.iconfont.icon-shoucang{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 30px;
+  color: #fff;
+  text-shadow: 1px 1px 8px #000;
+  cursor: pointer;
+}
+.room_like.iconfont.icon-shoucang:hover{
+  color: #2fb3ff;
+  text-shadow: 1px 1px 5px pink;
+}
+.room_price{
+  display: inline-block;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  background: rgba(0,0,0,.5);
+  font-size: 25px;
+  padding: 10px;
+  border-radius: 10px;
+  color: #eeebeb;
+}
+.room_detail{
+  width: 80%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 16px;
+  color: #484848;
+  font-weight: bold;
+  margin-top: 20px;
+}
+.room_detail>a{
+  font-size: 16px;
+  color: #3a3a3a;
+  font-weight: bold;
+}
