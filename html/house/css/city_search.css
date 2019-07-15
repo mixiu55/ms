@@ -1,4 +1,4 @@
-div,h4,ul,p{
+div,h4,ul,p,dl,dd{
   margin: 0;
   padding: 0;
 } 
@@ -24,7 +24,7 @@ a{
 a:hover{
   color:#2fb3ff;
 }
-ul{
+ul,dl,li,dd{
   list-style: none;
 }
 i{
@@ -110,24 +110,32 @@ section{
   display: block;
 }
 /* 图片部分 */
+.search_room{
+  width: 1098px;
+}
 .s_room_item{
   width: 345px;
+  float: left;
+  padding-right:20px;
+  margin-bottom: 20px;
 }
 .room-img{
   width: 345px;
   height: 230px;
   position: relative;
-}
-.r_img_a{
-  display: inline-block;
-  width: 345px;
-  height: 230px;
-  border-radius: 10px;
   overflow: hidden;
+  border-radius: 10px;
 }
 .room-img img{
   width: 100%;
   height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: all .5s;
+}
+.room-img img:hover{
+  transform: scale(1.1);
 }
 /* 收藏小星星 */
 .room_like.iconfont.icon-shoucang{
@@ -181,6 +189,9 @@ section{
   color: #3a3a3a;
   font-weight: bold;
 }
+.room_detail>a:hover{
+  text-decoration: underline;
+}
 .iconfont.icon-ditu{
   font-size: 14px;
 }
@@ -192,12 +203,12 @@ section{
   position: relative;
 }
 .r_ads_img{
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
   position: absolute;
   padding: 2px;
   border: 1px solid #ddd;
-  top: -125px;
+  top: -185px;
   left: 20px;
   background: #fff;
   display: none;
@@ -206,14 +217,14 @@ section{
 .r_ads_img .rank_bg{
   position: absolute;
   font-size: 16px;
-  top: 120px;
+  top: 180px;
   left: -5px;
   color: #fff;
 }
 .r_ads_img .rank_br{
   position: absolute;
   font-size: 16px;
-  top: 120px;
+  top: 180px;
   left: -6px;
   color: #ddd;
 }
@@ -223,4 +234,34 @@ section{
 .r_ads_img>img{
   width: 100%;
   height: 100%;
+}
+/* 房源具体描述 */
+.room_detail_ul{
+  padding: 5px 0px;
+}
+.room_detail_ul li{
+  padding-right: 3px;
+  cursor: pointer;
+}
+.room_detail_ul>li>span{
+  color: #fb51ae;
+}
+/* 房源标签 */
+.room_flag_dl dd{
+  margin-right:5px;
+  padding: 0px 5px;
+  line-height: 22px;
+  border: 1px solid #2fb3ff;
+  color: #2fb3ff; 
+  border-radius: 2px;
+}
+.room_flag_dl .best_chose{
+  border: 1px solid #6431e8;
+  color: #6431e8;
+  background: #f3f0fd;
+}
+.room_flag_dl .fast_book{
+  border: 1px solid #951fc3;
+  color: #951fc3;
+  background: #f7f1f3;
 }
