@@ -6,7 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
   <link rel="stylesheet" href="../css/normalize_zh.css">
+  <link rel="stylesheet" href="../css/iconfont.css">
   <link rel="stylesheet" href="css/detail.css">
+  <script src="../js/jquery-1.11.3.js"></script>
+  <script src="js/detail.js"></script>
 </head>
 <body>
   <section>
@@ -17,18 +20,128 @@
         <a href="">上海民宿</a>
         <a href="">房间编号:10001</a>
       </div>
-      <div class="house_pic">
-        <div class="h_pic_lg"></div>
-        <div cass="h_pic_sm"></div>
+      <!-- 页面轮播图部分 -->
+      <div class="main_part">
+        <!-- 轮播图部分 -->
+        <div class="house_pic clear_both">
+          <!-- 大图部分开始 -->
+          <div class="h_pic_lg fl">
+            <!-- 图片部分 -->
+            <ul class="lg_ul">
+              <li class="lg_item clear_both">
+                <a class="fl clear_both" href="">
+                  <img id="bigImg" class="fl" src="../imgs/houseimg/lg/10001-1.jpg" alt="">
+                </a>
+              </li>
+              <!-- <li class="lg_item">
+                <a class="clear_both" href="javascript:;">
+                  <img class="fl" src="../imgs/houseimg/lg/10001-2.jpg" alt="">
+                </a>
+              </li>
+              <li class="lg_item">
+                <a class="clear_both" href="javascript:;">
+                  <img class="fl" src="../imgs/houseimg/lg/10001-3.jpg" alt="">
+                </a>
+              </li>
+              <li class="lg_item">
+                <a class="clear_both" href="javascript:;">
+                  <img class="fl" src="../imgs/houseimg/lg/10001-4.jpg" alt="">
+                </a>
+              </li>
+              <li class="lg_item">
+                <a class="clear_both" href="javascript:;">
+                  <img class="fl" src="../imgs/houseimg/lg/10001-5.jpg" alt="">
+                </a>
+              </li>
+              <li class="lg_item">
+                <a class="clear_both" href="javascript:;">
+                  <img class="fl" src="../imgs/houseimg/lg/10001-6.jpg" alt="">
+                </a>
+              </li>
+              <li class="lg_item">
+                <a class="clear_both" href="javascript:;">
+                  <img class="fl" src="../imgs/houseimg/lg/10001-7.jpg" alt="">
+                </a>
+              </li>
+              <li class="lg_item">
+                <a class="clear_both" href="javascript:;">
+                  <img class="fl" src="../imgs/houseimg/lg/10001-8.jpg" alt="">
+                </a>
+              </li>
+              <li class="lg_item">
+                <a class="clear_both" href="javascript:;">
+                  <img class="fl" src="../imgs/houseimg/lg/10001-9.jpg" alt="">
+                </a>
+              </li>
+              <li class="lg_item">
+                <a class="clear_both" href="javascript:;">
+                  <img class="fl" src="../imgs/houseimg/lg/10001-10.jpg" alt="">
+                </a>
+              </li> -->
+            </ul>
+            <!-- 前后箭头 -->
+            <a class="arrow_prev" href="javascript:;"></a>
+            <a class="arrow_next" href="javascript:;"></a>
+          </div>
+          <!-- 大图部分结束 -->
+          <!-- 小图部分开始 -->
+          <div class="h_pic_sm fr" id="sm_pic_h">
+            <ul class="sm_ul" id="sm_ul">
+              <li class="sm_item">
+                <div class="pic_layer"></div>
+                <img src="../imgs/houseimg/lg/10001-2.jpg" data-lg="../imgs/houseimg/lg/10001-1.jpg" alt="">
+              </li>
+              <li class="sm_item">
+                <div class="pic_cure"></div>
+                <img src="../imgs/houseimg/lg/10001-1.jpg" data-lg="../imgs/houseimg/lg/10001-2.jpg" alt="">
+              </li>
+              <li class="sm_item">
+                <div class="pic_layer"></div>
+                <img src="../imgs/houseimg/lg/10001-3.jpg" data-lg="../imgs/houseimg/lg/10001-3.jpg" alt="">
+              </li>
+              <li class="sm_item">
+                <div class="pic_layer"></div>
+                <img src="../imgs/houseimg/lg/10001-4.jpg" data-lg="../imgs/houseimg/lg/10001-4.jpg" alt="">
+              </li>
+              <li class="sm_item">
+                <div class="pic_layer"></div>
+                <img src="../imgs/houseimg/lg/10001-5.jpg" data-lg="../imgs/houseimg/lg/10001-5.jpg" alt="">
+              </li>
+              <li class="sm_item">
+                <div class="pic_layer"></div>
+                <img src="../imgs/houseimg/lg/10001-6.jpg" data-lg="../imgs/houseimg/lg/10001-6.jpg" alt="">
+              </li>
+              <li class="sm_item">
+                <div class="pic_layer"></div>
+                <img src="../imgs/houseimg/lg/10001-7.jpg" data-lg="../imgs/houseimg/lg/10001-7.jpg" alt="">
+              </li>
+              <li class="sm_item">
+                <div class="pic_layer"></div>
+                <img src="../imgs/houseimg/lg/10001-8.jpg" data-lg="../imgs/houseimg/lg/10001-8.jpg" alt="">
+              </li>
+              <li class="sm_item">
+                <div class="pic_layer"></div>
+                <img src="../imgs/houseimg/lg/10001-9.jpg" data-lg="../imgs/houseimg/lg/10001-9.jpg" alt="">
+              </li>
+              <li class="sm_item">
+                <div class="pic_layer"></div>
+                <img src="../imgs/houseimg/lg/10001-10.jpg" data-lg="../imgs/houseimg/lg/10001-10.jpg" alt="">
+              </li>
+            </ul>
+            <a id="sm_prev" class="sm_prev iconfont icon-icon-arrow-up" href="javascript:;"></a>
+            <a id="sm_next" class="sm_next iconfont icon-icon-arrow-down" href="javascript:;"></a>
+          </div>
+          <!-- 小图部分结束 -->
+        </div>
+        <!-- 房间特色部分开始 -->
+        <div class="house_feature"></div>
       </div>
     </div>
     <!-- 左侧详情页结束 -->
     <!-- 右侧介绍开始 -->
     <div class="house_right">
-
     </div>
+    <!-- 右侧介绍结束 -->
   </section>
-
-
 </body>
 </html>

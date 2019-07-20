@@ -11,7 +11,11 @@ window.addEventListener("load",function(){
   var imgCount=bannerLi.length-1;
   // console.log(imgCount);
   // 图片的宽度
-  var liWidth=1600;
+  var liWidth=bannerDiv.offsetWidth;
+  // 给li赋值div的宽度
+  for(var li of bannerLi){
+    li.style.width=liWidth+"px";
+  }
   // console.log(liWidth);
   // 轮播图函数
   // 手动设置bannerul的宽度

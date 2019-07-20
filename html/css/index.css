@@ -36,10 +36,9 @@ a{
 }
 .banner_ul>li.banner_item{
     float: left;
-    width: 1600px;
 }
 .banner_item img{
-    width: 1600px;
+    width: 100%;
 }
 .banner_ul.transition{
     transition: all .5s linear;
