@@ -1,5 +1,5 @@
 /*原生js*/
-window.addEventListener("load",function(){
+function load(){
   var i=0;//轮播图开始的位置
   // 装载轮播图的div
   var bannerDiv=document.getElementById("i_banner");
@@ -106,4 +106,6 @@ window.addEventListener("load",function(){
       moveTo()
     },3000);
   };
-});
+}
+window.addEventListener("load",load);
+window.onresize=load;
