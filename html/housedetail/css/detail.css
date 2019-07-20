@@ -1,0 +1,38 @@
+body, button, input, select, textarea {
+  font: 14px Arial, Helvetica, sans-serif;
+  color: #333;
+} 
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+.clear_both::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+a{
+  text-decoration: none;
+  color: #333;
+}
+a:hover{
+  color:#2fb3ff;
+}
+ul,dl,li,dd{
+  list-style: none;
+}
+i{
+  font-style: normal;
+}
+section{
+  width: 1080px;
+  margin: 0 auto;
+}
+/* 顶部导航 */
+.house_path>a+a::before{
+  content: ">";
+  padding: 0px 5px;
+  color: #333;
+}

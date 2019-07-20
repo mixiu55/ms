@@ -34,8 +34,15 @@ a{
     position: relative;
     height: 650px;
 }
-.banner_ul .banner_item{
+.banner_ul>li.banner_item{
     float: left;
+    width: 1600px;
+}
+.banner_item img{
+    width: 1600px;
+}
+.banner_ul.transition{
+    transition: all .5s linear;
 }
 /* 箭头部分 */
 .banner_box .arrow_prev,.banner_box .arrow_next{
