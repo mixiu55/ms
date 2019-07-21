@@ -12,18 +12,34 @@
   <script src="js/detail.js"></script>
 </head>
 <body>
-  <section>
+  <section class="clear_both">
+    <!-- 导航栏1 -->
+    <div class="house_path">
+      <a href="">首页</a>
+      <a href="">上海民宿</a>
+      <a href="">房间编号:10001</a>
+    </div>
+    <!-- 导航栏2 -->
+    <div class="info_nav_box clear_both">
+      <ul class="info_nav fl clear_both">
+        <li class="fl"><a href=""><img src="../imgs/logo-text-small.png" alt=""></a></li>
+        <li class="fl current"><a href="#house_pic">实拍图片</a></li>
+        <li class="fl"><a href="#info_detail">详细介绍</a></li>
+        <li class="fl"><a href="#info_outer">出行信息</a></li>
+        <li class="fl"><a href="#info_must">入住须知</a></li>
+        <li class="fl"><a href="#user_commt">用户评价</a></li>
+      </ul>
+      <ul class="info_price fr clear_both">
+        <li class="fl">￥<span class="avg_price">689.00</span></li>
+        <li class="fr">每晚</li>
+      </ul>
+    </div>
     <!-- 左侧详情页开始 -->
-    <div class="house_detail">
-      <div class="house_path">
-        <a href="">首页</a>
-        <a href="">上海民宿</a>
-        <a href="">房间编号:10001</a>
-      </div>
+    <div class="house_detail fl">
       <!-- 页面轮播图部分 -->
       <div class="main_part">
         <!-- 轮播图部分 -->
-        <div class="house_pic clear_both">
+        <div id="house_pic"  class="house_pic clear_both">
           <!-- 大图部分开始 -->
           <div class="h_pic_lg fl">
             <!-- 图片部分 -->
@@ -134,12 +150,210 @@
           <!-- 小图部分结束 -->
         </div>
         <!-- 房间特色部分开始 -->
-        <div class="house_feature"></div>
+        <div class="house_feature">
+          <ul class="h_feature_ul clear_both">
+            <li class="h_f_item">
+              <h2>
+                <span class="iconfont icon-zhufangbaozhang"></span>
+                整套出租
+              </h2>
+              <p>房屋面积：65m²</p>
+              <p>房屋类型：1室0厅0厨1卫</p>
+            </li>
+            <li class="h_f_item">
+              <h2>
+                <span class="iconfont icon-kongqijinghuaqi"></span>
+                宜住2人
+              </h2>
+              <p>房客独享整套房屋</p>
+            </li>
+            <li class="h_f_item">
+              <h2>
+                <span class="iconfont icon-jiachuangfuwu"></span>
+                共一张
+              </h2>
+              <p>双人床：1.8m宽 × 2m长 ×2张</p>
+            </li>
+          </ul>
+        </div>
+        <!-- 房源介绍开始 -->
+        <ul class="h_produce">
+          <!-- 个人描述 -->
+          <li id="info_detail" class="h_pro_item clear_both">
+            <div class="info_title fl">
+              <div class="iconfont icon-zhufangbaozhang"></div>
+              <h1>个性描述</h1>
+            </div>
+            <div class="info_fr fr">
+              <div class="info_contain">
+                <p>
+                  这大概是向往的生活-意气风发的年纪在烟火气最盛的地方-/-买1个不临街的一居室-*-暖心的装修､舒适干净的床品､想在浴缸里休憩､慵懒的在沙发上看着窗外发呆或者看书､&夜幕降临与三五好友拥入熙熙攘攘的深夜街头｡<br/>
+                  因为向往这样的处所,所以装饰了这个家,把我想要的都融入其中了,也许你会想来体验一次吗?
+                  【户型】我的房子是1室1卫 ,干净整洁,有厨房,有1张双人床可供2人居住,有1个卫生间｡房屋采光非常好,明媚的阳光照射进来非常温暖,让您沐浴阳光,静静的享受着自然日光给您带来的安逸和温暖｡<br/>
+                  【卧室】卧室有1张1.8米大床采用宜家家居床垫,在一夜安睡后醒来,开始美好的一天!,房间还有北欧 三人座沙发､百兆wifi､网络电视､北欧吧台､椅子......您可以和朋友一起玩游戏､看电影,让这个小家给您带来温馨舒适的感受<br/>
+                  【厨房】开放式厨房,为客人准备了有锅具､碗､盘､筷子､勺子､微波炉､电饭锅､电水壶等用品｡让您体验到家一般的感觉<br/>
+                  【卫生间】吹风机,滚筒洗衣机(每月至少清洗消毒一次),洗衣液等｡洗发沐浴液､毛巾､浴巾､洗漱用品均按星级酒店标准为您准备齐全,请放心使用,无需自带
+                </p>
+              </div>
+              <div class="control_open">查看全部&nbsp;<span class="iconfont icon-icon-arrow-down"></span></div>
+              <div class="control_close">收起&nbsp;<span class="iconfont icon-icon-arrow-up"></span></div>
+            </div>
+          </li>
+          <!-- 出行信息 -->
+          <li id="info_outer" class="h_pro_item clear_both">
+            <div class="info_title fl">
+              <div class="iconfont icon-jichangjiesong"></div>
+              <h1>出行信息</h1>
+            </div>
+            <div class="info_fr fr">
+              <div class="info_contain">
+                <p>
+                  咱们的小家就在四号线鲁班路/十三号线世博会博物馆地铁站附近｡到虹桥大约45分钟(地铁),到浦东机场大约1小时(公交)如果您选择自驾出行,您可以将您的爱车停在距离小区大门口边上的停车场,每小时8元 ,封顶大约64元；<br>
+                  周边热门：田子坊（约1.4公里）、世博会中国国家馆（约2.2公里）、上海新天地（约2.2公里）<br>
+                  附近地铁站：鲁班路（约300米）、世博会博物馆（约400米）<br>
+                  机场 / 火车站：虹桥国际机场（约13.7公里）、浦东国际机场（约32.1公里）、上海火车站（约5.7公里）、上海南站（约6.7公里）、虹桥火车站（约14.9公里）<br>
+                  房源具体位置将在预订确认后提供
+                </p>
+              </div>
+              <div class="control_open">查看全部&nbsp;<span class="iconfont icon-icon-arrow-down"></span></div>
+              <div class="control_close">收起&nbsp;<span class="iconfont icon-icon-arrow-up"></span></div> 
+            </div>
+          </li>
+          <!-- 房间设施 -->
+          <li class="h_pro_item clear_both">
+            <div class="info_title fl">
+              <div class="iconfont icon-kongqijinghuaqi"></div>
+              <h1>房间设施</h1>
+            </div>
+            <div class="info_fr fr">
+              <div class="info_contain">
+                <ul class="h_facility clear_both">
+                  <li class="h_faly_item"><span class="iconfont icon-beidangenghuan"></span>被单更换</li>
+                  <li class="h_faly_item"><span class="iconfont icon-dianti"></span>电梯</li>
+                  <li class="h_faly_item"><span class="iconfont icon-qingsaogongju"></span>每日打扫</li>
+                  <li class="h_faly_item"><span class="iconfont icon-WiFi"></span>无线网络</li>
+                  <li class="h_faly_item"><span class="iconfont icon-chuifengji"></span>吹风机</li>
+                  <li class="h_faly_item"><span class="iconfont icon-kongtiao"></span>空调</li>
+                  <li class="h_faly_item"><span class="iconfont icon-xishuyongpin
+                    "></span>洗漱用品</li>
+                  <li class="h_faly_item"><span class="iconfont icon-tuoxie"></span>拖鞋</li>
+                  <li class="h_faly_item"><span class="iconfont icon-quantianreshui"></span>24小时热水</li>
+                  <li class="h_faly_item"><span class="iconfont icon-miehuoqi"></span>灭火器</li>
+                  <li class="h_faly_item"><span class="iconfont icon-duijiangmenjin"></span>智能锁</li>
+                  <li class="h_faly_item"><span class="iconfont icon-keyongchufang"></span>厨房</li>
+                  <li class="h_faly_item"><span class="iconfont icon-canju"></span>餐具</li>
+                  <li class="h_faly_item"><span class="iconfont icon-youyongchi"></span>游泳池</li>
+                  <li class="h_faly_item"><span class="iconfont icon-jiachuangfuwu"></span>加床服务</li>
+                  <li class="h_faly_item"><span class="iconfont icon-tingchewei"></span>停车场</li>
+                  <li class="h_faly_item"><span class="iconfont icon-weibolu"></span>微波炉</li>
+                  <li class="h_faly_item"><span class="iconfont icon-youxianwangluo
+                    "></span>有线网络</li>
+                  <li class="h_faly_item"><span class="iconfont icon-wuzhangaisheshi
+                    "></span>无障碍设施</li>
+                  <li class="h_faly_item"><span class="iconfont icon-jianshen"></span>健身房</li>
+              </div>
+              <div class="control_open">查看全部&nbsp;<span class="iconfont icon-icon-arrow-down"></span></div>
+              <div class="control_close">收起&nbsp;<span class="iconfont icon-icon-arrow-up"></span></div> 
+            </div>
+          </li>
+          <!-- 入住须知 -->
+          <li id="info_must" class="h_pro_item clear_both">
+            <div class="info_title fl">
+              <div class="iconfont icon-jichangjiesong"></div>
+              <h1>入住须知</h1>
+            </div>
+            <div class="info_fr fr">
+              <div class="info_contain">
+                <ul class="must_know clear_both">
+                  <li class="know_item">接待时间：<span class="know_info">00:00-24:00</span></li>
+                  <li class="know_item">最少入住：<span class="know_info">1天</span></li>
+                  <li class="know_item">退房时间：<span class="know_info">12:00以前</span></li>
+                  <li class="know_item">最多入住：<span class="know_info">不限</span></li>
+                  <li class="know_item">外宾接待：<span class="know_info">暂不支持</span></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <!-- 房源介绍结束 -->
+        <!-- 房源评论开始 -->
+        <div id="user_commt" class="h_comment_box">
+          <ul class="has_commt clear_both">
+            <li class="this_hs fl cur"><span class="iconfont icon-icon-mqs"></span> 本房源评价</li>
+            <li class="other_hs fl"><span class="iconfont icon-icon-mqs"></span> 房东其他房源评价</li>
+          </ul>
+          <!-- 评价星级 -->
+          <div class="commt_star_box clear_both">
+            <div class="start_l fl">
+              <div class="score">
+                5<span>/5分</span>
+              </div>
+              <ul class="star_ul">
+                <li class="star_info">
+                  <i class="light_star"></i>
+                </li>
+                <li class="star_info">
+                  <i class="light_star"></i>
+                </li>
+                <li class="star_info">
+                  <i class="light_star"></i>
+                </li>
+                <li class="star_info">
+                  <i class="light_star"></i>
+                </li>
+                <li class="star_info">
+                  <i class="grey_star"></i>
+                </li>
+              </ul>
+            </div>
+            <ul class="score_detail fl clear_both">
+              <li class="s_dtl_item">整洁卫生：<span>5分</span></li>
+              <li class="s_dtl_item">描述相符：<span>5分</span></li>
+              <li class="s_dtl_item">交通位置：<span>5分</span></li>
+              <li class="s_dtl_item">安全指数：<span>5分</span></li>
+              <li class="s_dtl_item">周围环境：<span>5分</span></li>
+              <li class="s_dtl_item">性价比：<span>5分</span></li>
+            </ul>
+          </div>
+          <!-- 评论内容 -->
+          <div class="comment_list">
+            <div class="com_contain clear_both">
+              <img class="fl dp_pic" src="../imgs/user/user1.jpg" alt="">
+              <div class="com_txt fl">
+                <h4><span class="dp_uname">小小益达_TL</span>入住时间：<i class="life_time">2019年06月</i></h4>
+                <p class="user_com">挺好的~~~</p>
+                <div class="replay_com dn"></div>
+              </div>
+            </div>
+            <div class="com_contain clear_both">
+                <img class="fl dp_pic" src="../imgs/user/userDefault.png" alt="">
+                <div class="com_txt fl">
+                  <h4><span class="dp_uname">喝醉的猫33^</span>入住时间：<i class="life_time">2019年07月</i></h4>
+                  <p class="user_com">房间非常漂亮，而且干净，装修是北欧工业风格，十分漂亮，大家可以安心入住。房东人非常友好，亲自在小区门口迎接了我们，让我们感到特别暖心，房东主动告诉我上海的经典旅游线路，让我充分的感受到上海这座城市的美丽发达。最后给房东和房子一个大大的赞吧</p>
+                  <div class="replay_com">
+                    <img class="fl dp_pic" src="../imgs/user/userDefault.png" alt="">
+                    <div class="replay_txt fl">
+                      <span class="iconfont icon-icon-arrow-down"></span>
+                      <h4>房东回复:</h4>
+                      <p class="host_com">非常好的客人，因为下午有拍摄所以有咨询客人大概几点退房，客人非常配合，走了之后协调阿姨过去打扫卫生，阿姨说客人住的太干净了，连卫生间垃圾都一起带走，打扫这么久第一次遇到这么高素质得客人，真的非常感谢您像爱护自己家一样爱护我们民宿，非常非常感谢，以后一机会在来苏州请提前告知一定会给一个很好的折扣</p>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+        <!-- 房源评论结束 -->
+      </div>
       </div>
     </div>
     <!-- 左侧详情页结束 -->
     <!-- 右侧介绍开始 -->
-    <div class="house_right">
+    <div class="house_right fl">
+      <div class="h_r_time">
+        <input type="date" placeholder="开始日期">
+        <input type="date" placeholder="结束日期">
+        <span>1套</span>
+      </div>
+      <a class="booking">立即预定</a>  
     </div>
     <!-- 右侧介绍结束 -->
   </section>
